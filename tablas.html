@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <!--Tr definir una fila-->
+    <!--th para definir el encabezado está en negrita-->
+    <!--td para ir completando las columnas-->
+
+    <h1>Tablas</h1>
+    <div>
+        <!--el id se tiene que corresponder con el header-->
+        <h2>Uso de id y headers</h2>
+        <table border="1">
+            <caption>ID Y HEADERS</caption>
+            <tr>
+                <th id="nombre">Nombre</th>
+                <th id="apellido">Apellido</th>
+                <th id="edad">Edad</th>
+            </tr>
+            <tr>
+                <td headers="nombre">Martina</td>
+                <td header="apellido">Montes</td>
+                <td header="edad">54</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <!--colspan:es para que una celda ocupe varias columnas-->
+        <table border="1">
+            <caption>Colspan</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Profesion</th>
+            </tr>
+            <tr>
+                <td>Manolo</td>
+                <td>Bakes</td>
+                <td>Panadero</td>
+            </tr>
+            <tr>
+                <td colspan="3">Informacion a compeltar</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!---colgroup sirve para aplicar una serue de propiedades a unas columnas como colores o fondo-->
+        <h2>Colgroup</h2>
+        <caption>Colgroup</caption>
+        <table border="1">
+            <colgroup>
+                <col style="background-color: cyan;">
+                <col style="background-color: beige;">
+                <col style="background-color: aqua;">
+            </colgroup>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>Queso</td>
+                <td>1$</td>
+                <td>Caducadp</td>
+            </tr>
+        </table>
+    </div>
+
+      
+</body>
+</html>
