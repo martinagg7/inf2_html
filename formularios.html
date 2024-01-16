@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--value es el valor que se la al input por defecto-->
+    <form action="url.ejemplo.com" method="post">
+        <label for="nombre">username</label>
+        <input type="text" id="nombre" placeholder="Sponge Bob " name="nombre usuario">
+        <input type="reset">
+        <input type="submit" minlength="7">
+        <br>
+        <label for="contraseña">contraseña</label>
+        <input type="password" id="contraseña" name="contraseña">
+        <br>
+        <label for="email">email</label>
+        <input id="email"type="email" placeholder="spongebob@gmail.com" name="email usuario" value="correo@example.com">
+        <br>
+        <label for="numero">phone</label>
+        <input type="phone" id="numero"placeholder="7890973" name="num telefono">
+        <br><!--para que solo se pueda seleccionar uno tenemos que poner el mismo name-->
+        <input type="radio" name="genero" value="masculino">Masculino
+        <input type="radio" name="genero" value="femenino">Femenino
+        <input type="radio" name="genero" value="binario">Binario
+        <br>
+        <select name="comidas">
+            <option value="marisco">Almejas</option>
+            <option value="carne">Manos de cerdo</option>
+            <option value="legumbres">Lentejas</option>
+        </select>
+        <br>
+        <lable>Escoja su marca favorita: </lable>
+        <input list="coches">
+        <datalist id="coches">
+        <option value="Mercerdes">Mercerdes</option>
+        <option value="BMW">BMW</option>
+        <option value="Seat">Seat</option>
+        <option value="Ferrari">Ferrari</option>
+        </datalist>
+        <br>
+        <label>satisfacion</label>
+        <input list="satisfacion">
+        <datalist id="satisfacion">
+            <option value="Mucho">Mucho</option>
+            <option value="Poco">Poco</option>
+            <option value="Normal">Normal</option>
+        </datalist>
+        <br>
+        <label>Cuántas ganas tiene de acabar el cuatri</label>
+        <select name="acabar">
+            <option value="pocas">0-5</option>
+            <option value="normal">5-8</option>
+            <option value="muchas">8-10</option>
+
+        </select>
+        <br>
+        <button type="button">Boton normal</button>
+        <button type="reset">Reseter</button>
+        <button type="submit">Enviar formulario</button>
+        <br>
+
+    </form>
+</body>
+</html>
