@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen HTML</title><!--NUNCA SE PUEDE USAR ID EN TITTLE-->
+</head>
+<body>
+    <!--dividir nuestro codigo en HEADER MAIN FOOTER-->
+    <header id="miheader">
+    <h1 id="titulo">Conceptos html</h1>
+    </header>
+    <main id="mimain">
+    <div class="post"> <!--sirve para aplicar a un conjunto de datos unas propiedades-->
+        <h2>Titulos</h2>
+        <p>h1 se trata del título más importante luego h2 es el subtitulo , h3 el subsubtítulo</p>
+        <h3>subsubtítulo</h3>
+        <h4>+subtitulo</h4>
+        <h5>...</h5>
+    </div>
+
+    <div class="post">
+        <h2 id="direcciones">Direcciones</h2>
+        <address>Universidad Alfonso X el sabio/La Universidad de la empresa <br> Avenida de la universida Villanueva de la Cañada</address>
+        <address>Residencias<br>R1 &nbsp;R2 &nbsp;R3</address>
+    </div>
+
+    <div class="post">
+        <h2>Citas</h2>
+        <p>Para citar podemos utilzar "q" o "blockquote"</p>
+        <p>q es para frases o algo más corto</p>
+        <p>blockquote es para un parrrafo</p>
+        <br>
+        <p>como dijo alguien famoso <q cite="ejemplo.com">blablabla....</q></p>
+        <blockquote cite="wikipedia.com">Aqui va una cita tomada de la wikipendia que habla de blablbla</blockquote>
+    </div>
+
+    <div class="post">
+        <h2>Del</h2>
+        <p>Sirve para indicar que el texto ya no es util</p>
+        <p> El precio del artículo fue <del cite="https://www.ejemplo.com/razon-del-cambio" datetime="2024-01-16T08:00">100 dólares</del> 80 dólares.</p>
+        <p>Comporo <del>8</del> 5 manzanas </p>
+    </div>
+
+    <div class="post">
+        <h2>Separacion horizontal</h2>
+        <hr>
+    </div>
+    <div class="post">
+        <h2>Texto ins</h2>
+        <p>Se utilza para subrayar una parte del texto sobretodo cuando se borra</p>
+        <p>Este articulo tiene un total <del>100 páginas</del><ins>200 páginas y más</ins></p>
+    </div>
+    <div class="post">
+        <h2>Texto preformateado</h2>
+        <p>Se muestra tal y como lo escribes</p>
+        <pre>Voy a escribir aqui 
+            dejo un espacio 
+            vuelvo a saltar de linea
+            y se queda asi!
+        </pre>
+    </div>
+    <div class="post">
+        <h2>Estilos de textp</h2>
+        <h3>Negrita</h3>
+        <p>Este texto nos enseña la negrita <i>aqui</i></p>
+        <h3>Cursiva</h3>
+        <p>Este texto nos enseña la cursiva <b>aqui</b></p>
+        <h3>letra grande y pequeña</h3>
+        <p style="font-size:small">letra pequeña</p>
+        <p style="font-size:large">letra pequeña</p>
+    </div>
+    <div class="post">
+        <!---target
+            _blank=nueva pagina
+            _self=misma
+            _top=en la parte superior
+        -->
+        <h2>Enlaces</h2>
+        <a  target="blank"href="https://google.com">google</a><br>
+        <a href="#titulo">inicio</a>
+        <a href="mailto:martinagg@mail.net">contáctame</a>
+    </div>
+    <div>
+        <h2 id="imagenes">Imagenes y figure</h2>
+        <p>figure se utiliza para encapsular imagen y informacion image figcaption</p>
+        <figure>
+            <img src="imgs/emoji.jpg" width="100">
+            <figcaption>emoticono feliz</figcaption>
+        </figure>
+    </div>
+    <div>
+        <h2>Article VS Section</h2>
+        <article>
+            <p>Se utlizar para agrupar una pieza de contenido peor este no tiene por qué tener la misma temática</p>
+        </article>
+        <section>
+            <p>Agrupar contenido que este relacionado</p>
+        </section>
+    </div>
+    <nav>
+        <ul type="star"> 
+            <li<a href="#direcciones"></a>>Direcciones</li>
+            <li<a href="#imagenes"></a>>Imagenes</li>
+            <li<a href="=#"></a>>listas</li>
+
+        </ul>
+    </nav>
+    </main>
+    <footer id="mi footer">
+        Pie de página de la web
+    </footer>
+</body>
+</html>
