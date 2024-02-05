@@ -3,65 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
+
 </head>
 <body>
-    <!--value es el valor que se la al input por defecto-->
-    <form action="url.ejemplo.com" method="post">
-        <label for="nombre">username</label>
-        <input type="text" id="nombre" placeholder="Sponge Bob " name="nombre usuario">
-        <input type="reset">
-        <input type="submit" minlength="7">
+    <h1>FORMULARIOS</h1>
+    <form action="urj.ejemplo.com"method="post">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre"placeholder="Nombre usuario" style="margin-right: 20px;">
+        <laber for="apellido">Apellido</laber>
+        <input id="apellido"type="text" name="second_name" placeholder="Apellido" style="margin-bottom: 20px;">
         <br>
-        <label for="contraseña">contraseña</label>
-        <input type="password" id="contraseña" name="contraseña">
+        <label for="contraseña">Contraseña</label>
+        <input id="contraseña" name="password" type="password"style="margin-bottom :20px;">
         <br>
-        <label for="email">email</label>
-        <input id="email"type="email" placeholder="spongebob@gmail.com" name="email usuario" value="correo@example.com">
+        <label for="email">Email</label>
+        <input id="email"type="email"name=email placeholder="user@email.com"style="margin-bottom :20px;" >
         <br>
-        <label for="numero">phone</label>
-        <input type="phone" id="numero"placeholder="7890973" name="num telefono">
-        <br><!--para que solo se pueda seleccionar uno tenemos que poner el mismo name-->
-        <input type="radio" name="genero" value="masculino">Masculino
-        <input type="radio" name="genero" value="femenino">Femenino
-        <input type="radio" name="genero" value="binario">Binario
+        <label for="numero">Tfno</label>
+        <input type="phone" id="numero" name="number"style="margin-bottom :20px;">
         <br>
-        <select name="comidas">
+        <label for="comida">Comida</label >
+        <select id="comida"name="comidas"style="margin-bottom :20px;">
             <option value="marisco">Almejas</option>
-            <option value="carne">Manos de cerdo</option>
+            <option value="carne">Callos</option>
             <option value="legumbres">Lentejas</option>
         </select>
         <br>
-        <lable>Escoja su marca favorita: </lable>
-        <input list="coches">
+            <label for="Deporte">Deporte</label>
+            <select id="Deporte" name="deporte" style="margin-bottom :20px;">
+                <option value="cansado">Correr</option>
+                <option value="no cansado">Ajedrez</option>
+                
+            </select>
+        <br>
+        <label for="coche_favorito">Coche favorito</label>
+        <input id="coche_favorito" list="coches">
         <datalist id="coches">
-        <option value="Mercerdes">Mercerdes</option>
-        <option value="BMW">BMW</option>
-        <option value="Seat">Seat</option>
-        <option value="Ferrari">Ferrari</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value=""BMW>BMW</option>
         </datalist>
         <br>
-        <label>satisfacion</label>
-        <input list="satisfacion">
-        <datalist id="satisfacion">
-            <option value="Mucho">Mucho</option>
-            <option value="Poco">Poco</option>
-            <option value="Normal">Normal</option>
+        <label for="modelo_coche">Modelo</label>
+        <input id="modelo_coche" list="modelo" style="margin-bottom :20px;">
+        <datalist id="modelo">
+            <option value="Clasico">Clasico</option>
+            <option value="Todoterreno">Todoterreno</option>
+            <option value="Deportivo">Deportivo</option>
         </datalist>
+        
+        <input type="radio " name="genero" value="hombre">Masculino
+        <input type="radio" name="genero" value="mujer">Mujer
+        <input type="radio" name="genero" value="binario">binario
         <br>
-        <label>Cuántas ganas tiene de acabar el cuatri</label>
-        <select name="acabar">
-            <option value="pocas">0-5</option>
-            <option value="normal">5-8</option>
-            <option value="muchas">8-10</option>
+        <input type="radio" name="satisfaccion" value="mucha">Me ha encantado la encuesta
+        <input type="radio" name="satisfaccion" value="normal">normal
+        <input type="radio" name="satisfaccion" value="baja">sin más
 
-        </select>
-        <br>
-        <button type="button">Boton normal</button>
-        <button type="reset">Reseter</button>
-        <button type="submit">Enviar formulario</button>
-        <br>
 
     </form>
+    
 </body>
 </html>
